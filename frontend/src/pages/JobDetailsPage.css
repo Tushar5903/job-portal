@@ -1,0 +1,89 @@
+.page-card {
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(15, 23, 42, 0.92);
+}
+
+.back-button {
+  margin-bottom: 1rem;
+}
+
+.job-header {
+  gap: 1rem;
+}
+
+.job-header h2 {
+  font-size: 2.4rem;
+  margin: 0.5rem 0 0.35rem;
+  color: #f8fafc;
+}
+
+.job-header p {
+  color: #cbd5e1;
+}
+
+.job-badge {
+  align-self: flex-start;
+  padding: 0.6rem 1rem;
+  background: rgba(139, 92, 246, 0.16);
+  color: #e9d5ff;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.job-info-grid,
+.job-list-section {
+  gap: 1.5rem;
+}
+
+.job-info-grid h3,
+.job-list-section h3 {
+  margin-bottom: 0.8rem;
+  color: #f8fafc;
+}
+
+.job-info-grid ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.job-info-grid li {
+  margin-bottom: 0.55rem;
+}
+
+.job-list-section p {
+  color: #cbd5e1;
+}
+
+.job-detail-card {
+  padding: 2rem;
+  border-radius: 1.75rem;
+}
+
+.apply-panel {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 1.5rem;
+  background: rgba(15, 23, 42, 0.94);
+}
+
+.apply-panel h3 {
+  margin-top: 0;
+  color: #f8fafc;
+}
+
+.apply-form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.apply-form input[type="file"] {
+  color: #e2e8f0;
+}
+
+.small-text {
+  color: #cbd5e1;
+}

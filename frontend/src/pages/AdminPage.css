@@ -1,0 +1,114 @@
+.section-header h2 {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.stat-card {
+  padding: 1.5rem;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.stat-card.active {
+  background: rgba(139, 92, 246, 0.16);
+  border-color: rgba(139, 92, 246, 0.35);
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #f8fafc;
+}
+
+.stat-card span {
+  color: #cbd5e1;
+}
+
+.stat-card.clickable {
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.stat-card.clickable:hover {
+  transform: translateY(-2px);
+  background: rgba(139, 92, 246, 0.12);
+}
+
+.detail-panel {
+  margin-top: 2rem;
+}
+
+.detail-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.detail-header h3 {
+  margin: 0;
+  color: #f8fafc;
+}
+
+.admin-detail-list {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
+}
+
+.admin-detail-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+.admin-detail-list::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 999px;
+}
+
+.admin-card {
+  min-width: 320px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(15, 23, 42, 0.92);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.admin-card h3 {
+  margin-bottom: 0.65rem;
+}
+
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0.85rem 0;
+  color: #94a3b8;
+}
+
+.candidate-headline {
+  margin: 0.75rem 0 0.5rem;
+  color: #e2e8f0;
+}
+
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  background: rgba(139, 92, 246, 0.14);
+  color: #c4b5fd;
+  text-decoration: none;
+}

@@ -1,0 +1,120 @@
+.profile-page {
+  gap: 1.5rem;
+}
+
+.profile-card {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.profile-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.profile-meta h3 {
+  margin: 0.25rem 0 0.35rem;
+}
+
+.muted-label {
+  margin: 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(226, 232, 240, 0.65);
+}
+
+.role-pill {
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background: rgba(139, 92, 246, 0.12);
+  color: #c4b5fd;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.profile-form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.profile-form label {
+  display: grid;
+  gap: 0.65rem;
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+.profile-form input {
+  width: 100%;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(15, 23, 42, 0.8);
+  color: #e2e8f0;
+  padding: 0.95rem 1rem;
+}
+
+.profile-form input::placeholder {
+  color: rgba(226, 232, 240, 0.5);
+}
+
+.resume-panel {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.resume-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.resume-meta h3 {
+  margin: 0;
+  color: #f8fafc;
+}
+
+.small-text {
+  color: #cbd5e1;
+}
+
+.resume-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.resume-form input[type="file"] {
+  color: #e2e8f0;
+}
+
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: rgba(139, 92, 246, 0.16);
+  border-radius: 999px;
+  color: #c4b5fd;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .profile-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

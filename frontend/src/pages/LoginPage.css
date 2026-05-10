@@ -1,0 +1,87 @@
+.form-shell {
+  min-height: calc(100vh - 140px);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.form-card {
+  max-width: 520px;
+  margin: 0 auto;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.form-card h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: #f8fafc;
+}
+
+.form-card form {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.form-card p {
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  width: 100%;
+}
+
+.form-card input,
+.form-card select {
+  background: rgba(15, 23, 42, 0.78);
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.password-input-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(15, 23, 42, 0.78);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 0.4rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.password-input-container input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #e2e8f0;
+  padding: 0.25rem 0;
+  outline: none;
+}
+
+.password-input-container input::placeholder {
+  color: rgba(226, 232, 240, 0.5);
+}
+
+.password-toggle {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.3rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.password-toggle:hover {
+  color: #e2e8f0;
+  background: rgba(148, 163, 184, 0.1);
+}
+
+.password-toggle:active {
+  background: rgba(148, 163, 184, 0.2);
+}

@@ -1,0 +1,147 @@
+.section-header h2 {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+}
+
+.page-tabs {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.tab {
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(15, 23, 42, 0.8);
+  color: #e2e8f0;
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.tab:hover,
+.tab.active {
+  background: rgba(139, 92, 246, 0.16);
+  transform: translateY(-1px);
+}
+
+.grid-list {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
+}
+
+.grid-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+.grid-list::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 999px;
+}
+
+.list-card,
+.job-card {
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(15, 23, 42, 0.92);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  min-width: 380px;
+  max-width: 460px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.employer-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.job-selector {
+  text-align: left;
+}
+
+.job-selector.active {
+  border-color: rgba(139, 92, 246, 0.5);
+  background: rgba(139, 92, 246, 0.12);
+}
+
+.selected-applicants-panel {
+  margin-top: 1.5rem;
+}
+
+.button-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.applicant-list {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.applicant-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+.applicant-list::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 999px;
+}
+
+.status-row {
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  color: #94a3b8;
+}
+
+.form-card {
+  background: rgba(15, 23, 42, 0.95);
+}
+
+.form-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #f8fafc;
+}
+
+.form-card form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-card label {
+  margin-bottom: 0;
+  color: #cbd5e1;
+}
+
+.form-card input,
+.form-card textarea,
+.form-card select {
+  background: rgba(15, 23, 42, 0.78);
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 0.9rem;
+  padding: 0.9rem 1rem;
+}
+
+@media (max-width: 720px) {
+  .grid-list {
+    flex-direction: column;
+  }
+}
